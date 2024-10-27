@@ -1,0 +1,210 @@
+body{
+    font-family: "Open Sans", Arial, sans-serif;
+}
+.main{
+    background: transparent url(home-concept-small.png) no-repeat center 60%;
+}
+.heading{
+    font-weight: 200;
+    letter-spacing: -.05em;
+}
+@media (min-width:1199px){
+    html[dir=rtl] .home-concept-construction{
+        background:0 0
+    }
+    .home-concept-construction{
+        background:transparent url(home-concept-small.png) no-repeat center 63%
+    }
+}
+
+
+@media (max-width:575px){
+    .diamonds-wrapper{
+        min-height:2650px
+    }
+    .diamonds-wrapper .diamonds{
+        margin:0 auto;
+        padding:25px 0 0;
+        text-align:center;
+        width:445px;
+        position:absolute;
+        left:50%;
+        margin-left:-222px
+    }
+    .diamonds-wrapper .diamonds>li{
+        text-align:center
+    }
+}
+
+
+.diamonds{
+    font-size:0;
+    margin:40px auto 85px;
+    position:relative;
+    text-align:center;
+    padding:50px 0 0 57px
+}
+.diamonds>li{
+    display:inline-block;
+    font-size:18px;
+    margin-right:135px
+}
+.diamonds .diamond{
+    background:#f7f7f7;
+    display:block;
+    height:255px;
+    overflow:hidden;
+    position:relative;
+    text-decoration:none;
+    width:255px;
+    overflow:hidden;
+    transform:rotate(-45deg)
+}
+.diamonds .diamond:after{
+    transition:all .2s ease;
+    content:" ";
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    background:#000;
+    opacity:0;
+    transform:scale(0);
+    z-index:100
+}
+.diamonds .diamond:hover:after{
+    opacity:.3;
+    transform:scale(1)
+}
+.diamonds .diamond:hover .content:after{
+    opacity:.8;
+    transform:scale(1)
+}
+.diamonds .content{
+    display:table-cell;
+    height:255px;
+    padding:0 10px;
+    transform:rotate(45deg);
+    text-align:center;
+    vertical-align:middle;
+    width:255px;
+    position:relative
+}
+.diamonds .content:after{
+    transition:all .2s ease;
+    color:#fff;
+    content:"\e091";
+    font-family:simple-line-icons;
+    font-size:28px;
+    left:27%;
+    margin:-6px -12px;
+    opacity:0;
+    position:absolute;
+    top:50%;
+    z-index:1000;
+    transform:scale(2)
+}
+.diamonds .content img{
+    max-width:375px;
+    margin-left:-50%
+}
+.diamonds .diamond-sm .content:after{
+    left:24%;
+    top:48%
+}
+@media (min-width:1199px){
+    .diamonds>li:nth-child(3){
+        margin-right:0
+    }
+    .diamonds>li:nth-child(4){
+        right:132px;
+        top:9px;
+        position:absolute
+    }
+    .diamonds>li:nth-child(5){
+        margin-left:527px;
+        margin-top:-70px
+    }
+    .diamonds>li:nth-child(6){
+        position:absolute;
+        margin:-6px 0 0 -27px;
+        right:-32px
+    }
+    .diamonds>li:nth-child(7){
+        position:absolute;
+        margin:97px 0 0 -133px;
+        right:73px
+    }
+    .diamonds .diamond-sm{
+        height:128px;
+        width:128px
+    }
+    .diamonds .diamond-sm .content{
+        height:128px;
+        width:128px
+    }
+    .diamonds .diamond-sm .content img{
+        max-width:195px
+    }
+    .row-diamonds-description{
+        margin-top:-150px
+    }
+}
+@media (max-width:1198px){
+    .diamonds{
+        text-align:center;
+        width:748px;
+        margin:0 auto;
+        padding:75px 0 75px 75px
+    }
+    .diamonds::after{
+        clear:both;
+        content:"";
+        display:block
+    }
+    .diamonds>li{
+        margin:0;
+        position:static;
+        float:left
+    }
+    .diamonds>li:nth-child(2n+2){
+        margin-bottom:-50px;
+        margin-left:55px;
+        margin-top:200px
+    }
+    .diamonds>li:nth-child(2n+1){
+        clear:both
+    }
+}
+@media (max-width:748px){
+    .diamonds{
+        margin:0 auto;
+        padding:25px 0 0 0;
+        text-align:center;
+        width:445px
+    }
+    .diamonds>li{
+        float:none!important;
+        clear:both!important;
+        margin:45px 0 115px 95px!important;
+        display:block
+    }
+}
+@media (max-width:575px){
+    .diamonds-wrapper{
+        min-height:2650px
+    }
+    .diamonds-wrapper .diamonds{
+        margin:0 auto;
+        padding:25px 0 0;
+        text-align:center;
+        width:445px;
+        position:absolute;
+        left:50%;
+        margin-left:-222px
+    }
+    .diamonds-wrapper .diamonds>li{
+        text-align:center
+    }
+}
